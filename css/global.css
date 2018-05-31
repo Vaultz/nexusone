@@ -1,0 +1,75 @@
+@media only screen and (min-device-width: 768px) {
+  .mobile_only {
+    display:none;
+  }
+}
+
+h1,h2,h3,h4,h5 {
+  margin:20px;
+}
+
+.center {
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
+}
+
+.navbar {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.button_blue {
+  background-color: #3949ab;
+  margin-bottom:10px;
+}
+
+.button_blue:hover {
+  background-color: #1e88e5;
+}
+
+
+
+/* PARNERS */
+.card_list {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: center;
+}
+
+.card_offer {
+  width:30%;
+  margin:1em;
+  text-align: center;
+}
+
+.card_offer span {
+  font-size: xx-large;
+}
+
+.card_newcase {
+  width:30%;
+  margin:1em;
+  text-align: center;
+}
+
+.card_newcase span {
+  font-size: x-large;
+}
+
+
+.factureedf {
+  width:50%;
+  border: 1px solid black;
+  margin:15px;
+}
+
+.travaux {
+  width:30%;
+  border: 1px solid black;
+  margin:15px;
+}
+
+.clientdata {
+  width:70%;
+}
