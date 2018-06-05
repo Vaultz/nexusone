@@ -4,6 +4,10 @@
   }
 }
 
+.hidden {
+  display:none;
+}
+
 h1,h2,h3,h4,h5 {
   margin:20px;
 }
@@ -38,7 +42,7 @@ h1,h2,h3,h4,h5 {
 }
 
 .card_offer {
-  width:30%;
+  width:40%;
   margin:1em;
   text-align: center;
 }
@@ -48,7 +52,7 @@ h1,h2,h3,h4,h5 {
 }
 
 .card_newcase {
-  width:30%;
+  width:40%;
   margin:1em;
   text-align: center;
 }
@@ -58,7 +62,7 @@ h1,h2,h3,h4,h5 {
 }
 
 
-.factureedf {
+.factureedf, .document {
   width:50%;
   border: 1px solid black;
   margin:15px;

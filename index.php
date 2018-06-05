@@ -14,7 +14,7 @@ $_SESSION['nbphoto_existant']=0;
     <?php include_once(__DIR__."/template/header.php"); ?>
 
     <section class="center">
-      <form class="" action="partner.php" method="post">
+      <form class="" action="partner_offer.php" method="post">
         <div class="input-field">
           <input id="login" type="text" class="validate">
           <label for="login">Identifiant</label>

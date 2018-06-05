@@ -11,7 +11,7 @@ include_once(__DIR__."/template/setup.php");
     <?php include_once(__DIR__."/template/header.php"); ?>
 
     <section class="mobile_only">
-      <h4>Préparer une affaire</h4>
+      <?php echo $_SESSION['offer_title'] ?>
       <h5>Photos de l'existant</h5>
       <div class="card_list">
         <img class="travaux" src="images/travaux.png" alt="">
