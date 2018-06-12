@@ -18,7 +18,7 @@ include_once(__DIR__."/template/setup.php");
       </div>
 
       <div class="center">
-        <a class="waves-effect waves-light btn button_blue" href="partner_newcase.php?nbphoto_facture=inc">Envoyer</a>
+        <a class="waves-effect waves-light btn button_blue" href="partner_onecase.php?nbphoto_facture=inc">Envoyer</a>
       </div>
     </section>
 

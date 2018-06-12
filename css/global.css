@@ -1,8 +1,17 @@
+/* GLOBAL */
 @media only screen and (min-device-width: 768px) {
   .mobile_only {
     display:none;
   }
 }
+
+@media only screen and (max-device-width: 768px) {
+  .desktop_only {
+    display:none;
+  }
+}
+
+
 
 .hidden {
   display:none;
@@ -18,11 +27,6 @@ h1,h2,h3,h4,h5 {
   justify-content: center;
 }
 
-.navbar {
-  padding-right: 20px;
-  padding-left: 20px;
-}
-
 .button_blue {
   background-color: #3949ab;
   margin-bottom:10px;
@@ -32,9 +36,29 @@ h1,h2,h3,h4,h5 {
   background-color: #1e88e5;
 }
 
+/* header.php */
+.navbar {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+#button_sidenav {
+  margin:0;
+}
+
+
 
 
 /* PARNERS */
+
+#bonus_link_inactive_no_offer, #bonus_link_inactive_wrong_offer {
+  color:grey;
+}
+
+#connect_partner_button {
+  margin-top:10px;
+}
+
 .card_list {
   display:flex;
   flex-wrap:wrap;
@@ -47,8 +71,13 @@ h1,h2,h3,h4,h5 {
   text-align: center;
 }
 
+
 .card_offer span {
-  font-size: xx-large;
+  font-size: x-large;
+}
+
+.blacktext {
+  color:black;
 }
 
 .card_newcase {
@@ -76,4 +105,13 @@ h1,h2,h3,h4,h5 {
 
 .clientdata {
   width:70%;
+}
+
+/* partner_allcases.php */
+.current_cases {
+  margin:5%
+}
+
+.current_cases .card-panel {
+  width:90%;
 }

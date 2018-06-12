@@ -34,7 +34,7 @@ else if($document=='acte') {
       </div>
 
       <div class="center">
-        <a class="waves-effect waves-light btn button_blue" href="partner_newcase.php?nbphoto_domic=inc">Valider</a>
+        <a class="waves-effect waves-light btn button_blue" href="partner_onecase.php?nbphoto_domic=inc">Valider</a>
       </div>
     </section>
 

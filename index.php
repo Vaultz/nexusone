@@ -1,8 +1,10 @@
 <?php include_once(__DIR__."/template/setup.php");
+session_destroy();
 $_SESSION['user']=null;
 $_SESSION['nbphoto_avis']=0;
 $_SESSION['nbphoto_facture']=0;
 $_SESSION['nbphoto_existant']=0;
+$_SESSION['offer']=null;
 ?>
 
 <!DOCTYPE html>
@@ -14,20 +16,14 @@ $_SESSION['nbphoto_existant']=0;
     <?php include_once(__DIR__."/template/header.php"); ?>
 
     <section class="center">
-      <form class="" action="partner_offer.php" method="post">
-        <div class="input-field">
-          <input id="login" type="text" class="validate">
-          <label for="login">Identifiant</label>
-        </div>
-        <div class="input-field">
-          <input id="password" type="password" class="validate">
-          <label for="password">Mot de passe</label>
-        </div>
-        <button id="connectButton" class="btn waves-effect waves-light button_blue" type="submit" name="action">Connexion</button>
-
-      </form>
+      <div class="desktop_only card-panel blue">
+        <span class="white-text">Sur Firefox, appuyer sur Shift+Ctrl+M pour passer en mode mobile.
+        </span>
+      </div>
+      <a href="partner_offers.php" id="connect_partner_button" class="mobile_only btn waves-effect waves-light button_blue">Module Partenaire Mobile</a>
     </section>
 
     <?php include_once(__DIR__."/template/scripts.php"); ?>
+
   </body>
 </html>

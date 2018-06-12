@@ -1,18 +1,26 @@
 <?php
 
-function buildTitle() {
-  $nbOffers=sizeof($_SESSION['CONFIG']['offers']);
+function buildTitle($selectedOffer, $allOffers, $newcase) {
+  $nbOffers=sizeof($allOffers);
   for ($i=0; $i < $nbOffers ; $i++) {
-    if($_SESSION['offer'] == $_SESSION['CONFIG']['offers'][$i][0]) {
-      $offer_color=$_SESSION['CONFIG']['offers'][$i][1];
+    if($selectedOffer == $allOffers[$i]['offre']) {
+      $offer_color=$allOffers[$i]['couleur'];
       break;
     }
   }
-  if($_SESSION['type']=='classic') {
-    $type="classique";
+
+  if($newcase) {
+    $action='Préparer';
   }
-  else if ($_SESSION['type']=='fair') {
-    $type="solidarité";
+  else {
+    $action='Modifier';
   }
-  return '<h4>Préparer une affaire <span class="'.$offer_color.'">'.$_SESSION['offer'].'</span> '.$type.'</h4>';
+
+  $title='<h4>'.$action.' une affaire <span class="'.$offer_color.'">'.$selectedOffer.'</span>';
+  if(strpos($_SESSION['type'],'SOLIDARITE')) {
+    $title.=' solidaire';
+  }
+  $title.='</h4>';
+
+  return $title;
 }

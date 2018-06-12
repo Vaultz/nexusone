@@ -45,7 +45,17 @@ else {
   }
 }
 
-$_SESSION['offer_title']=buildTitle($_SESSION['offer'], $_SESSION['OFFERS']);
+// IF we simulate an existing case
+if (
+  isset($_GET['nbphoto_domic']) &&
+  isset($_GET['nbphoto_facture']) &&
+  isset($_GET['nbphoto_existant'])
+) {
+  $newcase=false;
+}
+else $newcase=true;
+
+$_SESSION['offer_title']=buildTitle($_SESSION['offer'], $_SESSION['OFFERS'], $newcase);
 
 ?>
 
@@ -58,7 +68,7 @@ $_SESSION['offer_title']=buildTitle($_SESSION['offer'], $_SESSION['OFFERS']);
       <?php echo $_SESSION['offer_title'] ?>
       <h5>Renseigner votre affaire</h5>
       <div class="card_list">
-        <a class="card_newcase card-panel blue lighten-2" href="partner_facture.php">
+        <a class="card_newcase card-panel blue lighten-2" href="partner_onecase-photos_facture.php">
           <span class="white-text">FACTURE
             <br><i class="material-icons">add_a_photo</i>
           </span>
@@ -74,14 +84,14 @@ $_SESSION['offer_title']=buildTitle($_SESSION['offer'], $_SESSION['OFFERS']);
           </a>
         <?php } ?>
 
-        <a class="card_newcase card-panel deep-orange lighten-2" href="partner_current.php">
+        <a class="card_newcase card-panel deep-orange lighten-2" href="partner_onecase-photos_existing.php">
           <span class="white-text">EXISTANT
             <br><i class="material-icons">add_a_photo</i>
           </span>
           <br><div class="blacktext"><?php echo $_SESSION['nbphoto_existant']; ?> photo(s)</div>
         </a>
 
-        <a class="card_newcase card-panel purple lighten-2" href="partner_infoclient.php">
+        <a class="card_newcase card-panel purple lighten-2" href="partner_onecase-infoclient.php">
           <span class="white-text">INFOS CLIENT
             <br><i class="material-icons">assignment</i>
           </span>
@@ -89,7 +99,7 @@ $_SESSION['offer_title']=buildTitle($_SESSION['offer'], $_SESSION['OFFERS']);
       </div>
 
       <div class="center">
-        <a class="waves-effect waves-light btn button_blue">Envoyer
+        <a id="button_validate" class="waves-effect waves-light btn button_blue">Valider
           <i class="material-icons">check</i>
         </a>
       </div>
@@ -135,27 +145,19 @@ $_SESSION['offer_title']=buildTitle($_SESSION['offer'], $_SESSION['OFFERS']);
         else if (selected_item == "Acte notarial"){
           selected_item="acte";
         }
-        var href='partner_domic.php?document='+selected_item;
+        var href='partner_onecase-photos_domic.php?document='+selected_item;
         $('#button_ok_newcase').attr('href', href);
 
       });
     </script>
-    <?php
-    // prec variable determines what action the user previously took
-    if (
-      isset($_GET['nbphoto_facture']) ||
-      isset($_GET['nbphoto_domic']) ||
-      isset($_GET['nbphoto_avis']) ||
-      isset($_GET['nbphoto_existant'])
 
-    ) {
-      ?>
       <script>
-        M.toast({html: 'Les documents numérisés seront envoyés au serveur OCR sitôt que l\'appareil disposera d\'une connection Internet.'});
+        // M.toast({html: 'Les documents numérisés seront envoyés au serveur OCR sitôt que l\'appareil disposera d\'une connection Internet.'});
+        $('#button_validate').click(function() {
+          M.toast({html: 'Les documents numérisés et les informations saisies seront envoyés au serveur sitôt que l\'appareil disposera d\'une connection Internet.'});
+        });
       </script>
-      <?php
-    }
-    ?>
+
 
   </body>
 </html>
