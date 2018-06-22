@@ -76,10 +76,7 @@ $_SESSION['offer']=null;
 
       var href='partner_newcase.php?offer='+selected_offer+'&type='+$('#selected_type').text();
       $('.button_ok_option').attr('href', href);
-
-      // console.log("offer : "+$('#selected_offer').text()+' ; type : '+$('#selected_type').text());
     });
-
 
     // Redirect to selected type offer
     $('.option_offer_type').click(function() {
@@ -96,12 +93,9 @@ $_SESSION['offer']=null;
       $('#selected_type').text(type);
       $('.button_ok_option').attr('href', href+'&type='+type);
 
-      // console.log("offer : "+$('#selected_offer').text()+' ; type : '+$('#selected_type').text());
     });
 
     </script>
-    <script type="text/javascript">
-      $('.dropdown-trigger').dropdown();
-    </script>
+
   </body>
 </html>

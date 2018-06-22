@@ -48,18 +48,17 @@ include_once(__DIR__."/template/setup.php");
 
     <?php include_once(__DIR__."/template/scripts.php"); ?>
     <script type="text/javascript">
-      $(document).ready(function(){
-        $('select').formSelect();
-        $('#select_nb_foyers').change(function() {
-          var selectedNb=$(this).val();
-          inputTag='';
-          $('.input_foyers').empty();
-          for (var i = 1; i <=selectedNb ; i++) {
-            inputTag+='<div id="input_foyer_'+i+'"><label for="input_rfr_'+i+'">Revenu Fiscal de Référence '+i+'</label><input placeholder="Saisissez le RFR" id="input_rfr_'+i+'" type="text" class="validate"></div></div>';
-          }
-          $('.input_foyers').append(inputTag);
-        })
-      });
+      M.toast({html: 'Ici, le label [calcul du montant] représente le montant de la prime, calculé en temps réel au fil de la saisie.', displayLength: 6000});
+
+      $('#select_nb_foyers').change(function() {
+        var selectedNb=$(this).val();
+        inputTag='';
+        $('.input_foyers').empty();
+        for (var i = 1; i <=selectedNb ; i++) {
+          inputTag+='<div id="input_foyer_'+i+'"><label for="input_rfr_'+i+'">Revenu Fiscal de Référence '+i+'</label><input placeholder="Saisissez le RFR" id="input_rfr_'+i+'" type="text" class="validate"></div></div>';
+        }
+        $('.input_foyers').append(inputTag);
+      })
     </script>
 
   </body>

@@ -101,8 +101,5 @@ $_SESSION['offer']=null;
     });
 
     </script>
-    <script type="text/javascript">
-      $('.dropdown-trigger').dropdown();
-    </script>
   </body>
 </html>
