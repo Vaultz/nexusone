@@ -1,0 +1,180 @@
+{
+  "OFFERS":[
+    {
+      "offre":"NOM",
+      "couleur":"col or",
+      "sous_types":[
+        {
+          "sous_type":"Type",
+          "lien":"LINK",
+          "contrats":[
+            "CSPE","CEE"
+          ]
+        }
+      ]
+    },
+    {
+      "offre":"ISOLATION",
+      "couleur":"brown lighten-2",
+      "sous_types":[
+        {
+          "sous_type":"Combles",
+          "lien":"COMB",
+          "contrats":[
+            "CSPE","CEE"
+          ]
+        },
+        {
+          "sous_type":"Combles SOLIDARITE",
+          "lien":"COMBSOLIDARITE",
+          "contrats":[
+            "CSPE","CEE PRECARITE"
+          ]
+        },
+        {
+          "sous_type":"Murs extérieurs",
+          "lien":"MURSE",
+          "contrats":[
+            "CSPE","CEE"
+          ]
+        },
+        {
+          "sous_type":"Murs SOLIDARITE",
+          "lien":"MURSOLIDARITE",
+          "contrats":[
+            "CSPE","CEE PREACARITE"
+          ]
+        },
+        {
+          "sous_type":"Toits terrasses",
+          "lien":"TOITS",
+          "contrats":[
+            "CSPE","CEE"
+          ]
+        },
+        {
+          "sous_type":"Planchers",
+          "lien":"PLANC",
+          "contrats":[
+            "CSPE","CEE"
+          ]
+        },
+        {
+          "sous_type":"Ouvrants",
+          "lien":"OUVR",
+          "contrats":[
+            "CSPE","CEE"
+          ]
+        }
+      ]
+    },
+    {
+      "offre":"GAZ/FIOUL",
+      "couleur":"cyan darken-3",
+      "sous_types":[
+        {
+          "sous_type":"Renouvellement condensation",
+          "lien":"RNVLTCOND",
+          "contrats":[
+            "CSPE","CEE"
+          ]
+        },
+        {
+          "sous_type":"Renouvellement basse température",
+          "lien":"RNVLTBT",
+          "contrats":[
+            "CSPE"
+          ]
+        },
+        {
+          "sous_type":"Neuf & substitution Elec",
+          "lien":"NSE",
+          "contrats":[
+            "CSPE"
+          ]
+        }
+      ]
+    },
+    {
+      "offre":"PAC",
+      "couleur":"red accent-4",
+      "sous_types":[
+        {
+          "sous_type":"Résidence principale",
+          "lien":"RESPRINC",
+          "contrats":[
+            "CSPE","CEE"
+          ]
+        },
+        {
+          "sous_type":"Résidence secondaire",
+          "lien":"RESSEC",
+          "contrats":[
+            "CSPE","CEE"
+          ]
+        }
+      ]
+    },
+    {
+      "offre":"BOIS",
+      "couleur":"brown darken-A",
+      "sous_types":[
+        {
+          "sous_type":"Inserts, foyers, poêles",
+          "lien":"IFP",
+          "contrats":[
+            "CSPE","CEE"
+          ]
+        },
+        {
+          "sous_type":"Inserts, foyers, poêles SOLIDARITE",
+          "lien":"IFPSOLIDARITE",
+          "contrats":[
+            "CSPE","CEE PRECARITE"
+          ]
+        },
+
+        {
+          "sous_type":"Chaudières bois",
+          "lien":"CHAUDBOIS",
+          "contrats":[
+            "CSPE","CEE"
+          ]
+        }
+      ]
+    },
+    {
+      "offre":"CET",
+      "couleur":"light-blue darken-3",
+      "sous_types":[
+        {
+          "sous_type":"CET",
+          "lien":"CET",
+          "contrats":[
+            "CSPE","CEE"
+          ]
+        },
+        {
+          "sous_type":"CET SOLIDARITE",
+          "lien":"CETSOLIDARITE",
+          "contrats":[
+            "CSPE","CEE PRECARITE"
+          ]
+        }
+      ]
+    },
+    {
+      "offre":"CONGEL",
+      "couleur":"blue lighten-1",
+      "sous_types":[
+        {
+          "sous_type":"Réfrigérateurs/ Congélateurs",
+          "lien":"CONGEL",
+          "contrats":[
+            "CSPE"
+          ]
+        }
+      ]
+    }
+  ]
+}

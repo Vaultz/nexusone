@@ -1,0 +1,121 @@
+/* GLOBAL */
+@media only screen and (min-device-width: 768px) {
+  .mobile_only {
+    display:none;
+  }
+}
+
+@media only screen and (max-device-width: 768px) {
+  .desktop_only {
+    display:none;
+  }
+}
+
+
+
+.hidden {
+  display:none;
+}
+
+h1,h2,h3,h4,h5 {
+  margin:20px;
+}
+
+.center {
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
+}
+
+.centertext {
+  text-align:center;
+}
+
+.button_blue {
+  background-color: #3949ab;
+  margin-bottom:10px;
+}
+
+.button_blue:hover {
+  background-color: #1e88e5;
+}
+
+/* header.php */
+.navbar {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+#button_sidenav {
+  margin:0;
+}
+
+
+
+
+/* PARNERS */
+
+#bonus_link_inactive_no_offer, #bonus_link_inactive_wrong_offer {
+  color:grey;
+}
+
+#connect_partner_button {
+  margin-top:10px;
+}
+
+.card_list {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: center;
+}
+
+.card_offer {
+  width:40%;
+  margin:1em;
+  text-align: center;
+}
+
+
+.card_offer span {
+  font-size: x-large;
+}
+
+.blacktext {
+  color:black;
+}
+
+.card_newcase {
+  width:40%;
+  margin:1em;
+  text-align: center;
+}
+
+.card_newcase span {
+  font-size: x-large;
+}
+
+
+.factureedf, .document {
+  width:50%;
+  border: 1px solid black;
+  margin:15px;
+}
+
+.travaux {
+  width:30%;
+  border: 1px solid black;
+  margin:15px;
+}
+
+.clientdata {
+  width:70%;
+}
+
+/* partner_allcases.php */
+.current_cases {
+  margin:5%
+}
+
+.current_cases .card-panel {
+  width:90%;
+}

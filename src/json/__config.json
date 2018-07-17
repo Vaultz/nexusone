@@ -1,0 +1,36 @@
+{"offers": [
+  [
+    "ISOLATION",
+    "brown lighten-2",
+    {"types": [
+      "Combles",
+      "Combles solidarité",
+      "Murs extérieurs",
+      "Murs solidarité",
+      "Murs intérieurs",
+      "Toits terrasses",
+      "Planchers",
+      "Ouvrants"
+    ]}
+  ],
+  [
+    "GAZ/FIOUL",
+    "cyan darken-3"
+  ],
+  [
+    "PAC",
+    "red accent-4"
+  ],
+  [
+    "BOIS",
+    "brown darken-1"
+  ],
+  [
+    "CET",
+    "light-blue darken-3"
+  ],
+  [
+    "CONGEL",
+    "blue lighten-1"
+  ]
+]}

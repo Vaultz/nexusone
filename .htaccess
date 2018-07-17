@@ -1,0 +1,10 @@
+Options +FollowSymLinks
+RewriteEngine On
+
+RewriteRule    ^partner_mobile/?$    partner_mobile.php    [NC,L]   
+RewriteRule    ^partner_mobile/([A-Za-z0-9-]+)/?$    partner_mobile.php?page=$1    [NC,L]   
+RewriteRule    ^partner_mobile/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/?$    partner_mobile.php?page=$1&offer=$2&type=$3    [NC,L]   
+RewriteRule    ^partner_mobile/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/?$    partner_mobile.php?page=$1&offer=$2&type=$3&document=$4    [NC,L]   
+
+RewriteRule    ^partner_web/?$    partner_web.php    [NC,L]   
+RewriteRule    ^partner_web/([A-Za-z0-9-]+)/?$    partner_web.php?page=$1    [NC,L]   

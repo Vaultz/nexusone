@@ -1,29 +1,49 @@
-<?php include_once(__DIR__."/template/setup.php");
-session_destroy();
-$_SESSION['user']=null;
-$_SESSION['nbphoto_avis']=0;
-$_SESSION['nbphoto_facture']=0;
-$_SESSION['nbphoto_existant']=0;
-$_SESSION['offer']=null;
+<?php 
+session_start();
+
+$_SESSION['server']='PROD';
+
+
+$_SESSION['OFFERS']=json_decode(file_get_contents(getcwd().'/src/json/offers.json'),true)['OFFERS'];
+include_once(getcwd()."/src/php/buildHtml.php");
+include(getcwd().'/app/controller/Controller.php');
+$path = ltrim($_SERVER['REQUEST_URI'], '/');    
+$elements = explode('/', $path); 
+$controller=new Controller($elements);
+
+
+/*Managing the URI. Depending on which page the user is on, whe have to navigate through the directories to recover the files*/
+function getBaseUri() {
+
+  $uri=explode('/',$_SERVER['REQUEST_URI']);
+  
+  $uriSize=sizeof($uri);
+  var_dump("URI ".$uriSize);
+
+  switch ($uriSize) {
+    
+    
+    case 2:
+      return '';
+
+    case 3:
+      return '../';
+
+    case 4:
+      return '';
+
+    case 6:
+      return '../../';
+
+    case 7:
+      return '../../../';
+
+    default:
+      return 'ERROR'.$uriSize;
+  }
+
+}
+
+
+
 ?>
-
-<!DOCTYPE html>
-<html>
-
-  <?php include_once(__DIR__."/template/head.php"); ?>
-
-  <body>
-    <?php include_once(__DIR__."/template/header.php"); ?>
-
-    <section class="center">
-      <div class="desktop_only card-panel blue">
-        <span class="white-text">Sur Firefox, appuyer sur Shift+Ctrl+M pour passer en mode mobile.
-        </span>
-      </div>
-      <a href="partner_offers.php" id="connect_partner_button" class="mobile_only btn waves-effect waves-light button_blue">Module Partenaire Mobile</a>
-    </section>
-
-    <?php include_once(__DIR__."/template/scripts.php"); ?>
-
-  </body>
-</html>
