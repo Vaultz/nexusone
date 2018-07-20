@@ -2,7 +2,11 @@
 
 class View {
 	public function __construct() {
-		
+		echo '<!DOCTYPE html><html><body>';
+	}
+
+	public function __destruct() {
+		echo '</body></html>';
 	}
 
 	public function displayHome() {
@@ -26,15 +30,23 @@ class View {
 		include_once('PartnerMobile/Template/scripts.php');
 	}
 
-	public function displayPartner_web() {
+	public function displayPartner_web($object, $action, $step) {
 		include_once('PartnerWeb/Template/head.php');
 		include_once('PartnerWeb/Template/header.php');
-		include_once('PartnerWeb/'.$page.'.php');
+		if ($step=='') {
+			if ($action=='') {
+				include_once('PartnerWeb/home.php');
+			}
+			else {
+				include_once('PartnerWeb/'.$object.'/'.$action.'.php');
+			}
+		}
+		else {
+			include_once('PartnerWeb/'.$object.'/'.$action.'/'.$step.'.php');
+		}
 		include_once('PartnerWeb/Template/scripts.php');
 	}
 
-	public function loadPage($page) {
-	}
 }
 
 ?>

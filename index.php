@@ -14,14 +14,10 @@ $controller=new Controller($elements);
 
 /*Managing the URI. Depending on which page the user is on, whe have to navigate through the directories to recover the files*/
 function getBaseUri() {
-
   $uri=explode('/',$_SERVER['REQUEST_URI']);
-  
   $uriSize=sizeof($uri);
-  var_dump("URI ".$uriSize);
-
+/*  var_dump("URI ".$uriSize);*/
   switch ($uriSize) {
-    
     
     case 2:
       return '';
@@ -30,20 +26,17 @@ function getBaseUri() {
       return '../';
 
     case 4:
-      return '';
-
-    case 6:
       return '../../';
 
-    case 7:
+    case 5:
       return '../../../';
+
+    case 6:
+      return '../../../../';
 
     default:
       return 'ERROR'.$uriSize;
   }
-
 }
-
-
 
 ?>

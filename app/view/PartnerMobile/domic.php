@@ -14,7 +14,6 @@
         <option value="2">Acte notarié</option>
         <option value="3">Etc.</option>
       </select>
-      <label>Materialize Select</label>
     </div>
 
       <div class="input-field col s12 center">

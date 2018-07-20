@@ -1,0 +1,46 @@
+section {
+  margin-left:10px;
+}
+
+/* TEMPLATE */
+.path-nav {
+  margin-top:1%;  margin-bottom:1%;
+}
+
+.homesection {
+  display:flex;
+}
+
+.spacebox {
+  width:100%;
+  margin:5%;
+}
+
+.card_list {
+  display:flex;
+  /*border:solid black 3px;*/
+}
+
+/* FILES */
+.searchfile {
+  display:flex;
+}
+
+.filestable {
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90%;
+}
+
+.button_newfile {
+  margin:1%;
+}
+
+/* offer */
+.smallfield {
+  width:40%;
+}
+
+.select_suboffer {
+  display:none;
+}

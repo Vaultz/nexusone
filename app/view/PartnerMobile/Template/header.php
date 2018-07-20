@@ -28,7 +28,12 @@
     $bonus_link_id='bonus_link_inactive';
     if(isset($_SESSION['offer'])) {
       if(strpos($_SESSION['type'],'SOLIDARITE') || $_SESSION['offer']=='PAC') {
-        $href='partner_bonus.php';
+        if(isset($_GET['document'])) {
+          $href='simul';          
+        }
+        else {
+          $href=$_SESSION['type'].'/simul';
+        }
         $bonus_link_id='';
       }
       else {
@@ -36,9 +41,10 @@
       }
     }
     else {
+      /*var_dump($_SESSION['offer']);*/
       $bonus_link_id.="_no_offer";
     } ?>
-    <li><a id='<?php echo $bonus_link_id ?>' class="waves-effect" <?php echo 'href="'.$baseUri.'partner_mobile/simul"'; ?>><i class="material-icons">euro_symbol</i>Calculer la prime</a></li>
+    <li><a <?php echo 'id="'.$bonus_link_id.'"'; ?> class="waves-effect" <?php echo 'href="'.$href.'"'; ?>><i class="material-icons">euro_symbol</i>Calculer la prime</a></li>
     <li><a class="waves-effect" <?php echo 'href="'.$baseUri.'partner_mobile/offers"'; ?>><i class="material-icons">fiber_new</i>Préparer une affaire</a></li>
     <li><a class="waves-effect" <?php echo 'href="'.$baseUri.'partner_mobile/allcases"'; ?>><i class="material-icons">format_list_bulleted</i>Modifier une affaire</a></li>
     <li><div class="divider"></div></li>

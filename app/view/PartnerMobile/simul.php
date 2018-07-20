@@ -30,11 +30,11 @@
     <h1>[calcul du montant]</h1>
   </div>
   <div class="center">
-    <a class="waves-effect waves-light btn button_blue" href="onecase">Retour</a>
+    <a class="waves-effect waves-light btn button_blue" <?php echo 'href="../'.$_SESSION['type'].'"'; ?>>Retour</a>
   </div>
 </section>
 
-<?php include_once(__DIR__."/template/scripts.php"); ?>
+<?php include_once(__DIR__."/Template/scripts.php"); ?>
 <script type="text/javascript">
   M.toast({html: 'Ici, le label [calcul du montant] représente le montant de la prime, calculé en temps réel au fil de la saisie.', displayLength: 6000});
 
