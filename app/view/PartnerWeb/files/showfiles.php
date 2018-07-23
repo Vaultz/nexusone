@@ -1,8 +1,8 @@
 <section>
 	<div class="align-box">
-		
+
 		<h4>Mes dossiers</h4>
-		<a href="createfile/material" class="waves-effect waves-light btn blue button_newfile">Nouveau dossier</a>
+		<a href="createfile/material" class="waves-effect waves-light btn blue button_newfile tooltipped" data-tooltip="Lance la constitution d'un nouveau dossier.">Nouveau dossier</a>
 
 	</div>
 	<h5>Recherche de dossier</h5>
@@ -11,7 +11,7 @@
 			<div class="row">
 				<div class="input-field col s6">
 					<input type="text" name="" id="name">
-					<label for="name">Nom</label></div>			
+					<label for="name">Nom</label></div>
 				<div class="input-field col s6">
 					<input type="text" name="" id="address">
 					<label for="address">Adresse</label>
@@ -26,13 +26,13 @@
 					<input type="text" name="" id="nbfact">
 					<label for="nbfact">Numéro de facture</label></div>
 				<div class="input-field col s6">
-					<a class="waves-effect waves-light btn blue">Valider</a>
+					<a class="waves-effect waves-light btn blue tooltipped" data-tooltip="Valide le filtrage de dossiers suivant les données saisies.">Valider</a>
 				</div>
 			</div>
 		</form>
 	</article>
 	<h5>Liste des dossiers</h5>
-    <table class="highlight striped">
+    <table class="highlight tooltipped" data-position="top" data-tooltip="[A VENIR] Consultation et modification d'un dossier">
 	    <thead>
 	      <tr>
 	          <th>ID</th>
@@ -46,7 +46,7 @@
 
 	    <tbody>
 	      <tr>
-	      	<td>1656</td>
+	      	<td><a href="#">1656</a></td>
 	      	<td>Duhamel</td>
 	      	<td>Geneviève</td>
 	      	<td>484964</td>
@@ -54,7 +54,7 @@
 	      	<td>En cours</td>
 	      </tr>
 	      <tr>
-	      	<td>1657</td>
+	      	<td><a href="#">1657</a></td>
 	      	<td>Auger</td>
 	      	<td>Eliot</td>
 	      	<td>1604384</td>
@@ -63,7 +63,7 @@
 	      </tr>
 
 	      <tr>
-	      	<td>1658</td>
+	      	<td><a href="#">1658</a></td>
 	      	<td>Doyon</td>
 	      	<td>Warrane</td>
 	      	<td>4164189</td>
@@ -71,7 +71,7 @@
 	      	<td>Validé</td>
 	      </tr>
 	      <tr>
-	      	<td>1659</td>
+	      	<td><a href="#">1659</a></td>
 	      	<td>Vernadeau</td>
 	      	<td>Sébastien</td>
 	      	<td>4643044</td>

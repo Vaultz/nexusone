@@ -1,8 +1,9 @@
 <section>
 	<div class="align-box">
-		
+
 		<h4>Mes matériels</h4>
-		<a href="createfile/material" class="waves-effect waves-light btn blue button_newfile">Nouveau matériel</a>
+		<!-- href="../../material/creatematerial" -->
+		<a href="#" class="waves-effect waves-light btn blue button_newfile tooltipped" data-tooltip="[A VENIR]">Nouveau matériel</a>
 
 	</div>
 	<h5>Recherche de matériel</h5>
@@ -14,7 +15,7 @@
 					<label for="ref">Référence</label></div>
 				<div class="input-field col s4">
 					<input type="text" name="" id="name">
-					<label for="name">Nom</label></div>			
+					<label for="name">Nom</label></div>
 				<div class="input-field col s4">
 					<input type="text" name="" id="brand">
 					<label for="brand">Marque</label>
@@ -23,7 +24,7 @@
 					<input type="text" name="" id="tech">
 					<label for="tech">"Critère technique"</label></div>
 				<div class="input-field col s4">
-					<a class="waves-effect waves-light btn blue">Valider</a>
+					<a class="waves-effect waves-light btn blue tooltipped" data-tooltip="Valide le filtrage de dossiers suivant les données saisies.">Valider</a>
 				</div>
 			</div>
 		</form>
@@ -56,7 +57,7 @@
 	      	<td>Pompe à chaleur</td>
 	      	<td>Daikin</td>
 	      	<td>SCOP 4.6</td>
-	      	<td></td>
+	      	<td><a href="offer" class="waves-effect waves-light btn green">Choisir</a></td>
 	      </tr>
 
 	      <tr>
@@ -65,7 +66,7 @@
 	      	<td>Poêle à granulés</td>
 	      	<td>Musa</td>
 	      	<td></td>
-	      	<td></td>
+	      	<td><a href="offer" class="waves-effect waves-light btn green">Choisir</a></td>
 	      </tr>
 
 	      <tr>
@@ -74,10 +75,8 @@
 	      	<td>Chauffe-eau</td>
 	      	<td>Chaffoteaux</td>
 	      	<td></td>
-	      	<td></td>
+	      	<td><a href="offer" class="waves-effect waves-light btn green">Choisir</a></td>
 	      </tr>
-
-
 	    </tbody>
   	</table>
 </section>

@@ -18,7 +18,6 @@ class View {
 
 	public function displayPartner_mobile($page1,$page2) {
 		$page1 = ($page1==null) ? 'offers' : $page1 ;
-
 		include_once('PartnerMobile/Template/head.php');
 		include_once('PartnerMobile/Template/header.php');
 		if ($page2=='') {
@@ -46,7 +45,5 @@ class View {
 		}
 		include_once('PartnerWeb/Template/scripts.php');
 	}
-
 }
-
 ?>

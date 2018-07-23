@@ -1,5 +1,9 @@
 section {
-  margin-left:10px;
+  margin:2em;
+}
+
+h1,h2,h3,h4,h5 {
+  margin-left: 0px;
 }
 
 /* TEMPLATE */
@@ -43,4 +47,20 @@ section {
 
 .select_suboffer {
   display:none;
+}
+
+.justif_doc {
+  margin-top:15px;
+  margin-bottom:15px;
+}
+
+.contrib {
+  width:100%;
+  margin:1%;
+  height:12em;
+  border: solid black 2px;
+}
+
+.labelcheckbox {
+  color:white;
 }
