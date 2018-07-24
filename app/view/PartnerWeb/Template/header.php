@@ -9,15 +9,21 @@ function getPath() {
   if(isset($_GET['object'])) {
     switch($_GET['object']) {
       case 'files':
-      array_push($path, ['/partner_web/files/showfiles', 'Mes dossiers']);
-      break;
+        array_push($path, ['/partner_web/files/showfiles', 'Mes dossiers']);
+        break;
+      case 'materials':
+        array_push($path, ['/partner_web/materials/showmaterials', 'Mes matériels']);
+        break;
     }
   }
   if(isset($_GET['action'])) {
     switch($_GET['action']) {
       case 'createfile':
-      array_push($path, ['/partner_web/files/createfile/material', 'Nouveau dossier']);
-      break;
+        array_push($path, ['/partner_web/files/createfile/material', 'Nouveau dossier']);
+        break;
+      case 'creatematerial':
+        array_push($path, ['/partner_web/materials/creatematerial/info', 'Nouveau matériel']);
+        break;
     }
   }
   if(isset($_GET['step'])) {
