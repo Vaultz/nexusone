@@ -41,6 +41,9 @@ class View {
 			}
 		}
 		else {
+			if($action=='createfile') {
+				include_once('PartnerWeb/files/Template/createfile_steps.php');
+			}
 			include_once('PartnerWeb/'.$object.'/'.$action.'/'.$step.'.php');
 		}
 		include_once('PartnerWeb/Template/scripts.php');

@@ -3,20 +3,20 @@
 $path=getPath();
 function getPath() {
   $path=[
-    ['', 'Accueil'],
+    ['/partner_web/', 'Accueil'],
   ];
   $l_path=sizeof($_GET);
   if(isset($_GET['object'])) {
     switch($_GET['object']) {
       case 'files':
-      array_push($path, ['#', 'Mes dossiers']);
+      array_push($path, ['/partner_web/files/showfiles', 'Mes dossiers']);
       break;
     }
   }
   if(isset($_GET['action'])) {
     switch($_GET['action']) {
       case 'createfile':
-      array_push($path, ['#', 'Nouveau dossier']);
+      array_push($path, ['/partner_web/files/createfile/material', 'Nouveau dossier']);
       break;
     }
   }
@@ -53,7 +53,7 @@ function getPath() {
   <nav class="main-nav">
     <div class="navbar nav-wrapper indigo darken-1">
       <div class="row">
-        <a href="#" class="brand-logo center">NEXUS ONE</a>
+        <a href="/" class="brand-logo center">NEXUS ONE</a>
       </div>
     </div>
   </nav>

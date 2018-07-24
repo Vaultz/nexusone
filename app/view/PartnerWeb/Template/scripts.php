@@ -5,6 +5,7 @@
   $('select').formSelect();
   $('.tooltipped').tooltip();
   $('.dropdown-trigger').dropdown();
+  $('.tabs').tabs();
 </script>
 
 </body>
