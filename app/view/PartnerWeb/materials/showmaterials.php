@@ -5,13 +5,18 @@ if($_GET['action']=='createfile' && $_GET['step']=='material') {
 else {
   $button='';
 }
+if($_GET['object']=='materials') {
+  $new_material_button='creatematerial/info';
+}
+else if($_GET['object']=='files') {
+  $new_material_button='../../materials/creatematerial/info';
+}
 ?>
 
 <section>
 	<div class="align-box">
 		<h4>Mes matériels</h4>
-		<!-- href="../../material/creatematerial" -->
-		<a href="creatematerial/info" class="waves-effect waves-light btn blue button_newfile">Nouveau matériel</a>
+		<a href="<?php echo $new_material_button ?>" class="waves-effect waves-light btn blue button_newfile">Nouveau matériel</a>
 	</div>
 	<h5>Recherche de matériel</h5>
 	<article class="searchfile row">

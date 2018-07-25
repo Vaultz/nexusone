@@ -5,7 +5,7 @@
 
   <div class="justif_doc">
     Choisissez votre document
-  	<a href="#" class="waves-effect waves-light btn btn-small blue" >Parcourir</a>
+  	<a href="#" class="waves-effect waves-light btn btn-small blue button_browse">Parcourir</a>
     <span class="hide">facture_client.pdf</span>
     <div class="preloader-wrapper small active hide">
       <div class="spinner-layer spinner-green-only">
@@ -85,16 +85,16 @@
 
 <script type="text/javascript">
 
-  $('.select_justif').on('change', function() {
-    $('.justif_doc').removeClass('hide');
-  });
-  $('.justif_doc').on('click', function() {
-    $('.justif_doc span').removeClass('hide');
-    $('.preloader-wrapper').removeClass('hide');
-    setTimeout(function(){
-      $('.preloader-wrapper').addClass('hide');
-      $('.extracted_data').removeClass('hide');
-    }, 2000);
-  });
+  // $('.select_justif').on('change', function() {
+  //   $('.justif_doc').removeClass('hide');
+  // });
+  // $('.justif_doc').on('click', function() {
+  //   $('.justif_doc span').removeClass('hide');
+  //   $('.preloader-wrapper').removeClass('hide');
+  //   setTimeout(function(){
+  //     $('.preloader-wrapper').addClass('hide');
+  //     $('.extracted_data').removeClass('hide');
+  //   }, 2000);
+  // });
   // $('.tooltipped').tooltip();
 </script>
