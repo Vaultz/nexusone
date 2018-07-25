@@ -52,25 +52,34 @@
 		</div>
 
   <h5>Données complémentaires</h5>
-	<div class="other_data">
-		<div class="input-field smallfield">
-			<input id="type" type="text" class="validate">
-			<label for="type">Type de travaux</label>
+	<div class="row">
+		<div class="other_data col s12">
+			<div class="row">
+				<div class="input-field col s4">
+					<input id="type" type="text" class="validate">
+					<label for="type">Type de travaux</label>
+				</div>
+				<div class="input-field col s4">
+					<input id="date" type="text" class="validate">
+					<label for="date">Date de visite</label>
+				</div>
+
+			</div>
+			<div class="row">
+				<div class="input-field col s4">
+					<input id="data" type="text" class="validate">
+					<label for="data">Autres données client</label>
+				</div>
+				<div class="input-field col s4">
+					<input id="etc" type="text" class="validate">
+					<label for="etc">...</label>
+				</div>
+
+			</div>
 		</div>
-		<div class="input-field smallfield">
-			<input id="date" type="text" class="validate">
-			<label for="date">Date de visite</label>
-		</div>
-		<div class="input-field smallfield">
-			<input id="data" type="text" class="validate">
-			<label for="data">Autres données client</label>
-		</div>
-		<div class="input-field smallfield">
-			<input id="etc" type="text" class="validate">
-			<label for="etc">...</label>
-		</div>
+
 	</div>
-	<a class="waves-effect waves-light btn blue" href="domic">Valider</a>
+	<a href="domic" class="waves-effect waves-light btn blue right button_next">Suivant</a>
 </section>
 
 <script type="text/javascript">

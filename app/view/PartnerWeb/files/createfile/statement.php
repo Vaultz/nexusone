@@ -1,7 +1,7 @@
 <section class="">
   <h4>Attestation sur l'honneur</h4>
   <div class="contrib"></div>
-  <a class="waves-effect waves-light btn blue" href="../..">Valider</a>
+	<a href="../.." class="waves-effect waves-light btn blue right button_next">Suivant</a>
 </section>
 
 <?php include_once(getcwd()."/app/view/PartnerWeb/Template/scripts.php"); ?>

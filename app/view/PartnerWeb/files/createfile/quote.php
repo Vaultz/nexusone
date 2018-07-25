@@ -1,4 +1,3 @@
-
 <section class="">
   <h4>Devis</h4>
   <h5>Votre document</h5>
@@ -77,7 +76,7 @@
         <span class="labelcheckbox">_</span>
       </label>
     </p>
-    <a class="waves-effect waves-light btn blue" href="customer">Valider</a>
+  	<a href="customer" class="waves-effect waves-light btn blue right button_next">Suivant</a>
   </div>
 </section>
 

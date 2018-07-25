@@ -6,7 +6,15 @@ h1,h2,h3,h4,h5 {
   margin-left: 0px;
 }
 
+td, th {
+  text-align:center;
+}
+
 /* TEMPLATE */
+.pathelement {
+    text-decoration:underline;
+}
+
 .path-nav {
   margin-top:1%;  margin-bottom:1%;
 }
@@ -38,6 +46,15 @@ h1,h2,h3,h4,h5 {
 
 .button_newfile {
   margin:1%;
+}
+
+/* showfiles */
+.button_br {
+  margin:1%;
+}
+
+.button_next {
+  margin:1em;
 }
 
 /* offer */

@@ -60,12 +60,11 @@
       <label class="active" for="address">Adresse</label>
     </div>
   <div>
-  <a class="waves-effect waves-light btn blue" href="income">Valider</a>
+	<a href="income" class="waves-effect waves-light btn blue right button_next">Suivant</a>
 </section>
 
 <script type="text/javascript">
   $('.select_justif').on('change', function() {
     $('.justif_doc').removeClass('hide');
   });
-
 </script>

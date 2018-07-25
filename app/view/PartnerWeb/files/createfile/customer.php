@@ -79,22 +79,8 @@
         <span class="labelcheckbox">_</span>
       </label>
     </p>
-    <a class="waves-effect waves-light btn blue" href="statement">Valider</a>
+  	<a href="statement" class="waves-effect waves-light btn blue right button_next">Suivant</a>
   </div>
 </section>
 
-<script type="text/javascript">
-
-  // $('.select_justif').on('change', function() {
-  //   $('.justif_doc').removeClass('hide');
-  // });
-  // $('.justif_doc').on('click', function() {
-  //   $('.justif_doc span').removeClass('hide');
-  //   $('.preloader-wrapper').removeClass('hide');
-  //   setTimeout(function(){
-  //     $('.preloader-wrapper').addClass('hide');
-  //     $('.extracted_data').removeClass('hide');
-  //   }, 2000);
-  // });
-  // $('.tooltipped').tooltip();
-</script>
+<script type="text/javascript"></script>

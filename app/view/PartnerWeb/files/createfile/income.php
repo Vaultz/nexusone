@@ -56,10 +56,8 @@
     <h5>Aide</h5>
     <p>Montant : <i>montant de la prime</i></p>
     <p>Type : <i>type de prime</i></p>
-    <a class="waves-effect waves-light btn blue" href="contrib">Valider</a>
+  	<a href="contrib" class="waves-effect waves-light btn blue right button_next">Suivant</a>
   </div>
 </section>
 
-<script type="text/javascript">
-
-</script>
+<script type="text/javascript"></script>

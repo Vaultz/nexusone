@@ -1,9 +1,11 @@
 <?php
 if($_GET['action']=='createfile' && $_GET['step']=='material') {
-  $button='<a href="../createfile/offer" class="waves-effect waves-light btn blue">Choisir</a>';
+  $next_button='<a href="../createfile/offer" class="waves-effect waves-light btn blue right button_next">Suivant</a>';
+  $checkbox='<label><input type="checkbox" class="filled-in"/><span class="labelcheckbox"></span></label>';
 }
 else {
-  $button='';
+  $next_button='';
+  $checkbox='';
 }
 if($_GET['object']=='materials') {
   $new_material_button='creatematerial/info';
@@ -60,7 +62,7 @@ else if($_GET['object']=='files') {
 	      	<td>Pompe à chaleur</td>
 	      	<td>Daikin</td>
 	      	<td></td>
-	      	<td><?php echo $button; ?></td>
+	      	<td><?php echo $checkbox; ?></td>
 	      </tr>
 	      <tr>
 	      	<td>RXM50M</td>
@@ -68,7 +70,7 @@ else if($_GET['object']=='files') {
 	      	<td>Pompe à chaleur</td>
 	      	<td>Daikin</td>
 	      	<td>SCOP 4.6</td>
-	      	<td><?php echo $button; ?></td>
+	      	<td><?php echo $checkbox; ?></td>
 	      </tr>
 	      <tr>
 	      	<td>A-000000-03534</td>
@@ -76,7 +78,7 @@ else if($_GET['object']=='files') {
 	      	<td>Poêle à granulés</td>
 	      	<td>Musa</td>
 	      	<td></td>
-	      	<td><?php echo $button; ?></td>
+	      	<td><?php echo $checkbox; ?></td>
 	      </tr>
 	      <tr>
 	      	<td></td>
@@ -84,8 +86,10 @@ else if($_GET['object']=='files') {
 	      	<td>Chauffe-eau</td>
 	      	<td>Chaffoteaux</td>
 	      	<td></td>
-	      	<td><?php echo $button; ?></td>
+	      	<td><?php echo $checkbox; ?></td>
 	      </tr>
 	    </tbody>
   	</table>
+  <?php echo $next_button; ?>
+
 </section>
