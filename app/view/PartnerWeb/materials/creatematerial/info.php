@@ -30,7 +30,7 @@
       <a href="#" class="waves-effect waves-light btn btn-small blue button_browse">Parcourir</a>
       <span class="hide">fiche_technique.pdf</span>
     </div>
-    <a class="waves-effect waves-light btn blue" href="../showmaterials">Valider</a>
+    <a class="waves-effect waves-light btn blue" data-tooltip="" href="../showmaterials">Valider</a>
   </div>
 </section>
 <script type="text/javascript">

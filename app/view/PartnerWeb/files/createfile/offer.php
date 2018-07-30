@@ -46,7 +46,7 @@
 					</select>
 				</div>
 				<div class="col s6">
-					<a href="#" class="waves-effect waves-light btn blue button_newfile tooltipped" data-tooltip="[A VENIR]">Nouvel installateur</a>
+					<a href="#" class="waves-effect waves-light btn blue button_newfile tooltipped" data-tooltip="[A VENIR]">Demande de nouvel installateur</a>
 				</div>
 			</div>
 		</div>

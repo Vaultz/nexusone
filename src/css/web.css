@@ -10,6 +10,25 @@ td, th {
   text-align:center;
 }
 
+/* HOME */
+#card_files {
+  background-color: #2D8E33;
+}
+
+#card_materials {
+  background-color: #B43C39;
+}
+
+#card_quotes {
+  /* background-color: #B47239; */
+  background-color: grey;
+}
+
+#card_personalspace {
+  background-color: grey;
+  /* background-color: #236A6D; */
+}
+
 /* TEMPLATE */
 .pathelement {
     text-decoration:underline;
